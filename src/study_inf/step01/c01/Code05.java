@@ -1,4 +1,4 @@
-package study_inf.ex1_1;
+package study_inf.step01.c01;
 
 public class Code05 {
 
