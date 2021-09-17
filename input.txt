@@ -1,0 +1,6 @@
+kim 1234
+jhon 5678
+shin 9012
+choi 3245
+min 6789
+jin 0123
