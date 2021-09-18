@@ -14,7 +14,6 @@ public class Code20 {
 
 		try {
 			Scanner inFile = new Scanner(new File("input.txt"));
-
 			while (inFile.hasNext()) { // detect End of File
 				name[n] = inFile.next();
 				number[n] = inFile.next();
@@ -27,13 +26,13 @@ public class Code20 {
 			System.exit(9);
 		}
 
-		bubbleSort(n, name, number);
+		bubbleSort();
 
 		for (int i = 0; i < n; i++)
 			System.out.println(name[i] + ": " + number[i]);
 	}
 
-	static void bubbleSort(int n, String[] name, String[] number) {
+	static void bubbleSort() {
 		for (int i = n - 1; i > 0; i--) {
 			for (int j = 0; j < i; j++) {
 				if (name[j].compareToIgnoreCase(name[j + 1]) > 0) { // compareTo 1,0,-1
