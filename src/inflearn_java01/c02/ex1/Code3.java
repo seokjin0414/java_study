@@ -34,7 +34,20 @@ public class Code3 {
 			System.out.println(members[i].name + " " + members[i].number);
 	}
 
-	pssrivate static void bubbleSort() {
-
+	private static void bubbleSort() {
+		
+		for (int i = n; i > 0; i--) {
+			for (int j = 0; j < i; j++) {
+				if (members[j].name.compareTo(members[j + 1].name) > 0) {
+					// swap two persons
+					Person1 tmp = members[j];
+					members [j] = members[j + 1];
+					members[j + 1] = tmp;
+					
+				}
+			}
+		}
+		
 	}
 }
+
