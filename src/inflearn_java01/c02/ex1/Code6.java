@@ -11,7 +11,7 @@ public class Code6 {
 
 		Scanner kb = new Scanner(System.in);
 		while (true) {
-			System.out.println("$ ");
+			System.out.print("$ ");
 			String command = kb.next();
 			if (command.equals("create")) {
 				char name = kb.next().charAt(0);
@@ -68,13 +68,13 @@ public class Code6 {
 	private static void printPolynomial(Polynomial p) {
 		for (int i = 0; i < p.nTerms; i++) {
 			printTerm(p.terms[i]);
-			System.out.println("+");
+			System.out.print("+");
 		}
 		System.out.println();
 	}
 
 	private static void printTerm(Term term) {
-		System.out.println(term.coef + "x^" + term.expo); // -x^2 ==> +-1x^2
+		System.out.print(term.coef + "x^" + term.expo); // -x^2 ==> +-1x^2
 	}
 
 	private static void addTerm(Polynomial p, int c, int e) {
